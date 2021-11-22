@@ -1,0 +1,59 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10000;
+  padding: 10px 5%;
+  
+  
+  &__list{
+    margin-top:10%;
+    visibility:hidden;
+    &--item{
+      padding-top: 30px;
+      text-transform:capitalize;
+      font-size: 2em;
+      &--link{
+      }
+    }
+  }
+
+  .menu__box {
+    width: 40px;
+    height: 40px;
+    //outline: 1px solid white;
+    position: relative;
+    cursor: pointer;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+
+    #menu1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 40px;
+      height: 1px;
+      background-color: white; 
+    }
+
+    #menu2{
+      width: 30px;
+      height: 1px;
+      background: white;
+      position: absolute;
+      top:65%;
+    }
+  }
+}
+
+
+.menuListToggle{
+  margin-top: 10%;
+  visibility:visible;
+}

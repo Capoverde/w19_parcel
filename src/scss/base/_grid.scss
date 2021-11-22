@@ -1,0 +1,20 @@
+.main__index {
+  display: grid;
+  grid-template-columns: 0.25fr 2.2fr 0.25fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "asideleft content asideright";
+}
+
+.aside--left {
+  grid-area: asideleft;
+}
+
+.content {
+  grid-area: content;
+}
+
+.aside--right {
+  grid-area: asideright;
+}
