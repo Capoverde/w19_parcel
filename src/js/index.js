@@ -9,13 +9,8 @@ import gsap from 'gsap'
 //  animowanie textu
 
 const tl = gsap.timeline({ defaults: { ease: 'Circ.easeOut' } })
-// tl.fromTo('.create', { y: '100%' }, { y: '0%', duration: 0.7, stagger: 0.2 })
-const line = document.getElementById('line')
-// const circle = window.getComputedStyle(
-//   document.querySelector('.box'), ':after'
-// );
-// console.log(circle)
 
+const line = document.getElementById('line')
 const socials = document.querySelector('.socials__box')
 const vavList = document.getElementById('navList')
 
