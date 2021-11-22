@@ -8,12 +8,21 @@
   
   
   &__list{
-    margin-top:10%;
+    margin-top:0%;
     visibility:hidden;
+    // outline:1px solid red;
+    width:50%;
+    height:500px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
     &--item{
-      padding-top: 30px;
+      padding-top: 50px;
       text-transform:capitalize;
       font-size: 2em;
+      letter-spacing: 5px;
       &--link{
       }
     }
@@ -54,6 +63,5 @@
 
 
 .menuListToggle{
-  margin-top: 10%;
   visibility:visible;
 }
