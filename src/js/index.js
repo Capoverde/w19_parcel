@@ -16,8 +16,13 @@ const tl = gsap.timeline({ defaults: { ease: 'Circ.easeOut' } })
 const line = document.getElementById('line')
 const socials = document.querySelector('.socials__box')
 const vavList = document.getElementById('navList')
+const container = document.querySelector('.container')
 
-tl.from(line, 1.5, { scaleX: 0, transformOrigin: '20%' }).set(line, { opacity: 1 })
+
+
+
+tl.fromTo(container, 2, {z:0, opacity:0}, {z:'100%', opacity:1})
+.from(line, 1.5, { scaleX: 0, transformOrigin: '20%' }).set(line, { opacity: 1 })
   .fromTo('#hw19', { y: '10%', opacity: 0 }, { y: '0%', opacity: 1, duration: 0.7, stagger: 0.2 })
   .fromTo('#hnow', { x: '10%', opacity: 0, rotateZ: '270deg' }, { x: '0%', opacity: 1, duration: 0.7 })
   .fromTo(socials.children, { y: '10%', opacity: 0}, { y: '0%', opacity: 1, duration: 0.7, stagger:.2, ease:'SlowMo' })
