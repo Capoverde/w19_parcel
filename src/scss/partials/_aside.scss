@@ -3,6 +3,9 @@
   // outline: 1px solid red;
 }
 
+/*         ASIDE-LEFT
+================================*/
+
 .aside--left {
   position:relative;
 display: flex; 
@@ -40,4 +43,13 @@ justify-content: space-evenly;
       margin-left: 30px;
     }
   }
+}
+
+/*         ASIDE-RIGHT
+================================*/
+
+.aside--right{
+  display:flex;
+  align-items: center;
+  justify-content:center;
 }

@@ -6,6 +6,7 @@ import './../scss/app.scss'
  */
 import gsap from 'gsap'
 import $ from "jquery";
+import slick from 'slick-carousel';
 
 
 //  animowanie textu
@@ -41,4 +42,7 @@ hamburger.addEventListener('click', e =>{
   n();
 })
 
+/*
+*                  SLICK-CAROUSEL
+=============================================== */
 
