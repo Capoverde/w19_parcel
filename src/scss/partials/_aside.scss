@@ -4,10 +4,23 @@
 }
 
 .aside--left {
+  position:relative;
 display: flex; 
 align-items: center; 
-justify-content: center;
+justify-content: space-evenly;
   overflow:hidden;
+  // outline: 1px solid red;
+
+  .copy{
+    position:absolute;
+    font-size:8px;
+    transform:rotateZ(-90deg);
+    bottom:10%;
+    left:35%;
+    width:fit-content;
+    text-transform:capitalize;
+    opacity:.8;
+  }
 
   .socials__box {
     width: 240px;
@@ -21,6 +34,7 @@ justify-content: center;
     -moz-transform: rotateZ(-90deg);
     -ms-transform: rotateZ(-90deg);
     -o-transform: rotateZ(-90deg);
+    z-index:20000;
 
     a {
       margin-left: 30px;

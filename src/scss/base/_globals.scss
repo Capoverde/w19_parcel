@@ -4,10 +4,16 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   background: #000;
   color: #fff;
   min-height: 100vh;
+}
+
+main{
+  overflow:hidden;
 }
 
 h1 {
@@ -17,8 +23,59 @@ h1 {
 a {
   text-decoration: none;
   color: inherit;
+
+  &:hover {
+
+		&:before, &:after{
+      width:100%;
+			position: absolute;
+			content: attr(data-text);
+			transform: translate(-50%,-50%);
+			z-index: -1;
+		}
+ }
+
+ &:before {
+  top: 170.5%;
+  left: 49.5%;
+  color: rgba($color-1,0.8);
+  animation: distort1 $base-duration linear infinite;
 }
+
+&:after {
+  top: 170.5%;
+  left: 50.5%;
+  color: rgba($color-2,0.8);
+  animation: distort2 $base-duration linear infinite;
+}
+
+}
+
 
 ul {
   list-style: none;
+}
+
+@keyframes distort1 {
+  0%    { top: 78%; left: 49.5%; }
+  12.5% { top: 78%; left: 50%; }
+  25%   { top: 78%; left: 50.5%; }
+  37.5% { top: 78%; left: 50.5%; }
+  50%   { top: 78%; left: 50.5%; }
+  62.5% { top: 78%; left: 50%; }
+  75%   { top: 78%; left: 49.5%; }
+  87.5% { top: 78%; left: 49.5%; }
+  100%  { top: 78%; left: 49.5%; }
+}
+
+@keyframes distort2 {
+  0%    { top: 78%; left: 50.5%; }
+  12.5% { top: 78%; left: 50.5%; }
+  25%   { top: 78%; left: 50.5%; }
+  37.5% { top: 78%; left: 50%; }
+  50%   { top: 78%; left: 49.5%; }
+  62.5% { top: 78%; left: 49.5%; }
+  75%   { top: 78%; left: 49.5%; }
+  87.5% { top: 78%; left: 50%; }
+  100%  { top: 78%; left: 50.5%; }
 }

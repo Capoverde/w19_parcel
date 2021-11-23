@@ -3,8 +3,22 @@
   position: fixed;
   display: flex;
   justify-content: space-between;
+  // align-items:center;
   z-index: 10000;
   padding: 10px 5%;
+
+  .logo{
+    width:36px;
+    height:36px;
+    border:2px solid white;
+    border-radius:50%;
+    overflow: hidden;
+
+    img{
+      width:30px;
+      height:30px;
+    }
+  }
   
   
   &__list{
@@ -17,12 +31,15 @@
     justify-content:center;
     align-items:center;
     flex-direction:column;
+    flex-basis:50%;
+    z-idex: 20000;
 
     &--item{
       padding-top: 50px;
       text-transform:capitalize;
       font-size: 2em;
       letter-spacing: 5px;
+      margin-left: 35%;
       &--link{
       }
     }
@@ -59,9 +76,15 @@
       top:65%;
     }
   }
+
+  .lang{
+    margin-top: 10px;
+    cursor:pointer;
+  }
 }
 
 
 .menuListToggle{
   visibility:visible;
 }
+

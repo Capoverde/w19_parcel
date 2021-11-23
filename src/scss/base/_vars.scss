@@ -2,3 +2,32 @@
          VARIABLES
 =========================*/
 
+
+
+$base-duration: 300ms;
+
+// Colors
+$color-1: #E91E63;
+$color-2: #03A9F4;
+$color-3: #2ecc71;
+$black: #000;
+
+// Breakpoints
+$sm: new-breakpoint(min-width 320px);
+$med: new-breakpoint(min-width 768px);
+$lg: new-breakpoint(min-width 1024px);
+
+
+// spectograph
+
+$spectrograph-bars-count: 20;
+$spectrograph-bar-width: 6px;
+
+$spectrograph-bar-cells-count: 5;
+$spectrograph-bar-cell-height: 2px;
+
+$spectrograph-gap-height: 2px;
+$spectrograph-gap-width: 1px;
+
+$spectrograph-height: $spectrograph-bar-cells-count * ($spectrograph-bar-cell-height + $spectrograph-gap-height);
+$spectrograph-width: ($spectrograph-bar-width * $spectrograph-bars-count) + ($spectrograph-gap-width * ($spectrograph-bars-count - 1));

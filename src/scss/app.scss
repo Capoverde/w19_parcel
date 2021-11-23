@@ -7,6 +7,9 @@
 @import "./partials/nav";
 @import "./partials/aside";
 
+/* COMPONENTS */
+@import './components/spectograph';
+
 .container {
   width: 60%;
   height: 100vh;
