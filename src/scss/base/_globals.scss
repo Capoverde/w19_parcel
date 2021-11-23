@@ -10,14 +10,16 @@ body {
   background: #000;
   color: #fff;
   min-height: 100vh;
+  font-family: 'Roboto Mono', monospace;
 }
 
 main{
   overflow:hidden;
 }
 
-h1 {
+h1,h2,h3 {
   text-align: center;
+  font-family: 'Comfortaa', cursive;
 }
 
 a {
