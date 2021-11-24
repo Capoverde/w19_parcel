@@ -7,6 +7,13 @@
   z-index: 10000;
   padding: 10px 5%;
 
+  .speakers{
+    position: relative;
+    .fas{
+      position: absolute;
+    }
+  }
+
   .logo{
     width:36px;
     height:36px;
