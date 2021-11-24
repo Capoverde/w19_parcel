@@ -21,7 +21,7 @@ const container = document.querySelector('.container')
 
 
 
-tl.fromTo(container, 6, {z:0, opacity:0}, {z:'100%', opacity:1})
+tl.fromTo(container, 2, {z:0, opacity:0}, {z:'100%', opacity:1})
 .from(line, 1.5, { scaleX: 0, transformOrigin: '20%' }).set(line, { opacity: 1 })
   .fromTo('#hw19', { y: '10%', opacity: 0 }, { y: '0%', opacity: 1, duration: 0.7, stagger: 0.2 })
   .fromTo('#hnow', { x: '8%', opacity: 0, rotateZ: '270deg' }, { x: '-2%', opacity: 1, duration: 0.7 })
@@ -54,7 +54,7 @@ hamburger.addEventListener('click', e =>{
 const speakers = document.querySelectorAll('#speaker')
 
 
-
+//  funkcja do toglowania widoku głośników
 
 
 /*
