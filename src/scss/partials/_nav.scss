@@ -3,25 +3,35 @@
   position: fixed;
   display: flex;
   justify-content: space-between;
-  // align-items:center;
   z-index: 10000;
   padding: 10px 5%;
 
+.audio__box{
+display:flex;
+justify-content:center;
+width: fit-content;
+
+
+
   .speakers{
-    padding-top: 10px;
+    padding-top: 8px;
     position: relative;
     cursor:pointer;
-    flex-grow:.5;
+    margin-right: 25px;
 
     .fas{
       position: absolute;
     }
+  }
+
+  // INPUT
 
     .vid-slider {
       position: relative;
       margin: 0 auto;
       max-width: 30em;
       padding: 1em;
+      margin-top: 10px;
     }
     
     .vid-slider__controls {
@@ -74,6 +84,8 @@
       
     }
   }
+
+  //   LOGO
 
   .logo{
     width:36px;
