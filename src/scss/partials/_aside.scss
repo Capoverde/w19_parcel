@@ -52,4 +52,28 @@ justify-content: space-evenly;
   display:flex;
   align-items: center;
   justify-content:center;
+
+  height: 100vh;
+  z-index:1000000;
+
+  // outline: 1px solid red;
+}
+
+.slider__wrapper{
+  // outline: 1px solid red;
+display: flex;
+flex-flow: column;
+align-items: center;
+justify-content: space-between;
+  height: 300px;
+}
+
+.slider__container{
+  overflow: hidden;
+  // outline: 1px solid red;
+
+  height: 50%;
+  .slide{
+    font-size: 2.5rem;
+  }
 }

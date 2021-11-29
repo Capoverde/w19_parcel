@@ -1,31 +1,19 @@
 
-// .track-title {
+audio{
+    z-index:1000000;
+}
 
-//     position: absolute;
+.bar-wrapper {
+    height: 300px;
+    position: relative;
+}
+.bar {
+    position: relative;
+    bottom: 0;
+    width: 5px;
+    display: inline-block;
+    border: 1px solid red;
+    height: 5px;
+    border-bottom: 3px solid #fff;
+}
 
-//     top: 200px;
-//     right: 0;
-//     left: 0;
-
-//     color: white;
-//     font-family: Calibri;
-//     font-size: 100px;
-//     text-align: center;
-
-// }
-
-// .visualizer-container {
-//     position: absolute;
-//     bottom: 450px;
-//     right: 0;
-//     left: 0;
-//     text-align: center;
-// }
-
-// .visualizer-container__bar {
-//     display: inline-block;
-//     background: #fff;
-//     opacity:.5;
-//     margin: 0 2px;
-//     width: 1px;
-// }

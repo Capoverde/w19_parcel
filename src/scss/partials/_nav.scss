@@ -18,6 +18,7 @@ width: fit-content;
     position: relative;
     cursor:pointer;
     margin-right: 25px;
+    visibility: hidden;
 
     .fas{
       position: absolute;
@@ -168,3 +169,6 @@ width: fit-content;
   visibility:visible;
 }
 
+.showSpeaker{
+  visibility: visible;
+}

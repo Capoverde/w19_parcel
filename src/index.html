@@ -5,6 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src='https://kit.fontawesome.com/132e87df1f.js'></script>
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script type='text/javascript' src='js/index.js' defer></script>
   <title>wiosny</title>
 </head>
@@ -19,8 +24,8 @@
       <!-- AUDIO -->
       <div class="audio__box">
         <div class="speakers">
-          <i id="speaker" class="fas fa-volume-down"></i>
-          <i id="speaker" class="fas fa-volume-mute"></i>
+          <i id="speaker1" class="fas fa-volume-down showSpeaker"></i>
+          <i id="speaker2" class="fas fa-volume-mute"></i>
         </div>
         <div class="inp">
           <input class="vid-slider__range" id="js-range" type="range" min="0" max="20" value="5" />
@@ -61,19 +66,33 @@
       </svg>
     </div>
     <!-- SPECTOGRPH -->
-    <div class="visualizer-container"></div>
+    <div class="visualizer-container">
+      <canvas id='canvas' width="400" height="350"></canvas>
+      <br>
+      <br>
+      <!-- <audio src="./assets/track.mp3" id="audio" controls>audio element not supported</audio> -->
+    </div>
 </div>
   <aside class="aside--right">
-    <!-- SLICK -->
-    <!-- <div id="simple-vertical" class="royalSlider rsDefault">
-      
-      <a class="rsImg" data-rsvideo="hhttps://vimeo.com/44388232" href="http://b.vimeocdn.com/ts/308/375/308375094_640.jpg"></a>
-      <div>
-      
-         <div class="rsABlock blockSample">Animated Block Sample</div>
-      </div>
-      
-    </div> -->
+    <div class="slider__wrapper">
+      <a href="#">
+        <svg id="chart" width="30" height="225">
+          <line x1="20" y1="20" x2="20" y2="130" style="stroke:rgb(255,255,255);stroke-width:2"></line>
+        </svg>
+      </a>
+        <div class="slider__container">
+          <div id="slide1" class="slide"> 1</div>
+          <div id="slide2" class="slide"> 2</div>
+          <div id="slide3" class="slide"> 3</div>
+          <div id="slide4" class="slide"> 4</div>
+          <div id="slide4" class="slide"> 5</div>
+        </div>
+      <a href="#">
+        <svg id="chart" width="30" height="225">
+          <line x1="20" y1="20" x2="20" y2="130" style="stroke:rgb(255,255,255);stroke-width:2"></line>
+        </svg>
+      </a>
+    </div>
   </aside>
 </main>
 </body>
